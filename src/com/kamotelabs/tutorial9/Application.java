@@ -11,6 +11,8 @@ public class Application {
 		System.out.println("Please enter a command: ");
 		String text = input.nextLine();
 		
+		input.close();
+		
 		switch (text) {
 		case "start":
 			System.out.println("Machine started!");
