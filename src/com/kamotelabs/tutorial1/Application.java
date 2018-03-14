@@ -1,3 +1,4 @@
+package com.kamotelabs.tutorial1;
 
 public class Application {
 
