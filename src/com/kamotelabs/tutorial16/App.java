@@ -22,6 +22,10 @@ public class App {
 		sam.speak("Hi I'm Sam!");
 		sam.jump(7);
 		sam.move("West", 12.2);
+		
+		String agik = "Anu ginagawa mu?";
+		
+		sam.speak(agik);
 	}
 
 }
