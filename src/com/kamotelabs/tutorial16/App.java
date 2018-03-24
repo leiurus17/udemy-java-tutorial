@@ -23,9 +23,13 @@ public class App {
 		sam.jump(7);
 		sam.move("West", 12.2);
 		
-		String agik = "Anu ginagawa mu?";
+		String agik = "Anu ginagawa mu?"; // Reference
 		
 		sam.speak(agik);
+		
+		int talon = 10; // Value
+		
+		sam.jump(talon);
 	}
 
 }
