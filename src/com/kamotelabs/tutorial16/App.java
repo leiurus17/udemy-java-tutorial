@@ -1,8 +1,8 @@
 package com.kamotelabs.tutorial16;
 
 class Robot {
-	public void speak() {
-		System.out.println("Hello");
+	public void speak(String text) {
+		System.out.println(text);
 	}
 }
 
@@ -11,7 +11,7 @@ public class App {
 	public static void main(String[] args) {
 		Robot sam = new Robot();
 		
-		sam.speak();
+		sam.speak("Hi I'm Sam!");
 		
 	}
 
