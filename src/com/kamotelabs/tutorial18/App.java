@@ -10,7 +10,7 @@ class Machine {
 public class App {
 	
 	public static void main(String[] args) {
-		
+		Machine machine1 = new Machine();
 	}
 
 }
