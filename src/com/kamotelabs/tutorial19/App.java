@@ -8,7 +8,11 @@ class Thing {
 	
 	public static int count = 0;
 	
+	public int id;
+	
 	public Thing() {
+		
+		id = count;
 		count++;
 	}
 	
@@ -42,7 +46,9 @@ public class App {
 		thing2.name = "Sue";
 		
 		System.out.println(thing1.name);
+		System.out.println("Object ID: " + thing1.id);
 		System.out.println(thing2.name);
+		System.out.println("Object ID: " + thing2.id);
 		System.out.println(thing1.description); // A warning
 		
 		thing1.showName();
