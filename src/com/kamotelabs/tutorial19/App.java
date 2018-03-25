@@ -1,8 +1,16 @@
 package com.kamotelabs.tutorial19;
 
 class Thing {
+	public final static int LUCKY_NUMBER = 7;
+	
 	public String name;
 	public static String description;
+	
+	public static int count = 0;
+	
+	public Thing() {
+		count++;
+	}
 	
 	// Instance method
 	public void showName() {
@@ -20,6 +28,8 @@ class Thing {
 public class App {
 	
 	public static void main(String[] args) {
+		
+		System.out.println("Thing is called: " + Thing.count + " times.");
 	
 		Thing.description = "I am a thing";
 		
@@ -39,6 +49,14 @@ public class App {
 		thing2.showName();
 		
 		Thing.showInfo();
+		
+		System.out.println(Math.PI);
+		
+		// Math.PI = 3; //The final field Math.PI cannot be assigned
+		
+		System.out.println(Thing.LUCKY_NUMBER);
+		
+		System.out.println("Thing is called: " + Thing.count + " times.");
 	}
 
 }
