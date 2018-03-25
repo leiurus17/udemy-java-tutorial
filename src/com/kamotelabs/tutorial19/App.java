@@ -4,12 +4,16 @@ class Thing {
 	public String name;
 	public static String description;
 	
+	// Instance method
 	public void showName() {
 		System.out.println(name);
+		System.out.println(description); // Instance method can output static variables
 	}
 	
+	// Class method
 	public static void showInfo() {
 		System.out.println(description);
+		// System.out.println(name); // Static method can't output instance variables!
 	}
 }
 
