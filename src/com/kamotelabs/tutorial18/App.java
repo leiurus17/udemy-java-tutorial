@@ -11,6 +11,8 @@ public class App {
 	
 	public static void main(String[] args) {
 		Machine machine1 = new Machine();
+		
+		new Machine(); // This invoke an instance of object in itself
 	}
 
 }
