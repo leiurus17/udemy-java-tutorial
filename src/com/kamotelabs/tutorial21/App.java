@@ -11,15 +11,15 @@ class Frog {
 	}
 	
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
+		return String.format("%d: %s", id, name);
 		
-		sb.append(id)
-		.append(": ")
-		.append(name);
-		
-				
-				
-		return sb.toString();
+//		StringBuilder sb = new StringBuilder();
+//		
+//		sb.append(id)
+//		.append(": ")
+//		.append(name);
+//			
+//		return sb.toString();
 	}
 }
 
