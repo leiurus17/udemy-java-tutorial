@@ -27,6 +27,12 @@ public class App {
 		.append("I am a skydiver.");
 		
 		System.out.println(s.toString());
+		
+		System.out.printf("Total cost %d: Quantity is %d.\n", 5, 120);
+		
+		for(int i = 0; i < 20; i++) {
+			System.out.printf("%2d: some text here\n", i);
+		}
 	}
 
 }
