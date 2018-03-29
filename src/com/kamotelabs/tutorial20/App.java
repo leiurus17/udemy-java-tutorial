@@ -33,6 +33,9 @@ public class App {
 		for(int i = 0; i < 20; i++) {
 			System.out.printf("%2d: some text here\n", i);
 		}
+		
+		System.out.printf("Total value: %.2f\n", 5.63434);
+		System.out.printf("Total value: %5.1f\n", 5.63434);
 	}
 
 }
