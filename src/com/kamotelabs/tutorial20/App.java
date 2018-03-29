@@ -19,6 +19,14 @@ public class App {
 		sb.append("I am a lion tamer.");
 		
 		System.out.println(sb.toString());
+		
+		StringBuilder s = new StringBuilder();
+		
+		s.append("My name is Roger.")
+		.append(" ")
+		.append("I am a skydiver.");
+		
+		System.out.println(s.toString());
 	}
 
 }
