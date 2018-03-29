@@ -11,6 +11,14 @@ public class App {
 		info += "I am a builder.";
 		
 		System.out.println(info);
+		
+		StringBuilder sb = new StringBuilder("");
+		
+		sb.append("My name is Sue.");
+		sb.append(" ");
+		sb.append("I am a lion tamer.");
+		
+		System.out.println(sb.toString());
 	}
 
 }
