@@ -45,6 +45,8 @@ public class App {
 		showList(list1);
 		showList(list2);
 		showList2(list2);
+		showList3(list2);
+		showList3(list1);
 	}
 
 	// ? is a wildcard!
