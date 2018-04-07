@@ -6,29 +6,41 @@ class Machine {
 
 	@Override
 	public String toString() {
-		return "Machine [toString()=" + super.toString() + "]";
+		return "I am a Machine.";
 	}
-	
+
 }
 
 class Camera extends Machine {
-	
+
+	@Override
+	public String toString() {
+		return "I am a Camera.";
+	}
+
 }
 
 public class App {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> list = new ArrayList<>();
-		
-		list.add("one");
-		list.add("two");
-		
-		showList(list);
+		ArrayList<Machine> list1 = new ArrayList<>();
+
+		list1.add(new Machine());
+		list1.add(new Machine());
+
+		ArrayList<Camera> list2 = new ArrayList<>();
+
+		list2.add(new Camera());
+		list2.add(new Camera());
+
+		showList(list1);
+		showList(list2);
 	}
-	
-	public static void showList(ArrayList<String> list) {
-		for(String value: list) {
+
+	// ? is a wildcard!
+	public static void showList(ArrayList<?> list) {
+		for (Object value : list) {
 			System.out.println(value);
 		}
 	}
