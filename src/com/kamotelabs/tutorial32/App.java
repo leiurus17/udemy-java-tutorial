@@ -10,7 +10,15 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Machine machine1 = new Machine();
+		Machine machine1 = new Machine() {
+
+			@Override
+			public void start() {
+				System.out.println("Camera snapping ...");
+			}
+			
+			
+		};
 		
 		machine1.start();
 		
