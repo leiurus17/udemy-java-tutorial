@@ -3,6 +3,11 @@ package com.kamotelabs.tutorial31;
 import java.util.ArrayList;
 
 class Machine {
+
+	@Override
+	public String toString() {
+		return "Machine [toString()=" + super.toString() + "]";
+	}
 	
 }
 
