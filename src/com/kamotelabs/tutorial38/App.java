@@ -12,32 +12,33 @@ public class App {
 
 		File file = new File("test.txt");
 		BufferedReader br = null;
-		
+
 		try {
 			FileReader fr = new FileReader(file);
-			br =  new BufferedReader(fr);
-			
+			br = new BufferedReader(fr);
+
 			String line;
-			
-			while((line = br.readLine()) != null) {
+
+			while ((line = br.readLine()) != null) {
 				System.out.println(line);
 			}
-			
-			
-			
+
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found: " + file.toString());
 		} catch (IOException e) {
 			System.out.println("Unable to read file: " + file.toString());
 		}
-		
-		try {
-			br.close();
-		} catch (IOException e) {
-			System.out.println("Unable to close file: " + file.toString());
-		} catch (NullPointerException e) {
-			// File was probably never opened!
+
+		finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				System.out.println("Unable to close file: " + file.toString());
+			} catch (NullPointerException e) {
+				// File was probably never opened!
+			}
 		}
+
 	}
 
 }
