@@ -11,10 +11,11 @@ public class App {
 	public static void main(String[] args) {
 
 		File file = new File("test.txt");
+		BufferedReader br = null;
 		
 		try {
 			FileReader fr = new FileReader(file);
-			BufferedReader br = new BufferedReader(fr);
+			br =  new BufferedReader(fr);
 			
 			String line;
 			
@@ -22,12 +23,20 @@ public class App {
 				System.out.println(line);
 			}
 			
-			br.close();
+			
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found: " + file.toString());
 		} catch (IOException e) {
 			System.out.println("Unable to read file: " + file.toString());
+		}
+		
+		try {
+			br.close();
+		} catch (IOException e) {
+			System.out.println("Unable to close file: " + file.toString());
+		} catch (NullPointerException e) {
+			// File was probably never opened!
 		}
 	}
 
