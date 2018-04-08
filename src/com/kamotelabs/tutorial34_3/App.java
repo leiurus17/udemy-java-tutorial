@@ -6,9 +6,13 @@ import java.io.FileReader;
 
 public class App {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) {
 
-		openFile();
+		try {
+			openFile();
+		} catch (FileNotFoundException e) {
+			System.out.println("Could not open file.");
+		}
 		
 	}
 	
