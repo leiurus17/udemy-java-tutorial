@@ -52,6 +52,17 @@ public class App {
 		Person person2 = new Person(5, "Bob");
 		
 		System.out.println(person1.equals(person2));
+		
+		Double value1 = 7.2;
+		Double value2 = 7.2;
+		
+		System.out.println(value1 == value2);
+		System.out.println(value1.equals(value2));
+		
+		Integer number1 = 6;
+		Integer number2 = 6;
+		
+		System.out.println(number1 == number2);
 
 	}
 
