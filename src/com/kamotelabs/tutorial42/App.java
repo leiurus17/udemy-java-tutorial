@@ -24,6 +24,8 @@ public class App {
 		Person person1 = new Person(5, "Bob");
 		Person person2 = new Person(8, "Sue");
 		
+		person2 = person1;
+		
 		System.out.println(person1 == person2);
 
 	}
