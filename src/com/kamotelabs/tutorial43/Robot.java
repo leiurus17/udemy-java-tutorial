@@ -8,6 +8,12 @@ public class Robot {
 		}
 	}
 	
+	static class Battery {
+		public void charge() {
+			System.out.println("Battery charging...");
+		}
+	}
+	
 	public class Legs {
 		public void run() {
 			System.out.println("Robot " + id + " is running.");

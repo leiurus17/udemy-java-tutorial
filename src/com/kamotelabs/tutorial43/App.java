@@ -11,6 +11,10 @@ public class App {
 		Robot.Legs legs = robot.new Legs();
 		
 		legs.run();
+		
+		Robot.Battery battery = new Robot.Battery();
+		
+		battery.charge();
 	}
 
 }
