@@ -8,7 +8,7 @@ public class Robot {
 		}
 	}
 	
-	static class Battery {
+	public static class Battery {
 		public void charge() {
 			System.out.println("Battery charging...");
 		}
@@ -32,6 +32,20 @@ public class Robot {
 		Brain brain = new Brain();
 
 		brain.think();
-	}
+		
+		final String name = "Robert";
+		
+		class Temp {
+			public void doSomething() {
+				System.out.println("ID is: " + id);
+				System.out.println("My name is " + name);
+			}
+		}
+		
+		Temp temp = new Temp();
+		temp.doSomething();
 
+	}
+	
+	
 }
