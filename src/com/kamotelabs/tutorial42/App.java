@@ -48,6 +48,8 @@ public class App {
 
 	public static void main(String[] args) {
 		
+		System.out.println(new Object());
+		
 		Person person1 = new Person(5, "Bob");
 		Person person2 = new Person(5, "Bob");
 		
@@ -63,6 +65,15 @@ public class App {
 		Integer number2 = 6;
 		
 		System.out.println(number1 == number2);
+		
+		String text1 = "Hello";
+		String text2 = "Helloadafdfa".substring(0,5);
+		
+		System.out.println(text2);
+		
+		System.out.println(text1 == text2);
+		
+		System.out.println(text1.equals(text2));
 
 	}
 
