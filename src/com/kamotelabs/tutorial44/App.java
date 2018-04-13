@@ -31,6 +31,10 @@ public class App {
 		System.out.println(Animal.CAT.toString());
 		
 		System.out.println("Enum name as a string: " + Animal.DOG.name());
+		
+		Animal animal2 = Animal.valueOf("CAT");
+		
+		System.out.println(animal2);
 	}
 
 }
