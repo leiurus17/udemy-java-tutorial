@@ -2,8 +2,6 @@ package com.kamotelabs.tutorial44;
 
 public class App {
 	
-	
-	
 	public static void main(String[] args) {
 		
 		Animal animal = Animal.CAT;
@@ -23,6 +21,11 @@ public class App {
 
 		}
 		
+		System.out.println(Animal.DOG);
+		System.out.println(Animal.DOG.getClass());
+		System.out.println(Animal.DOG instanceof Animal);
+		System.out.println(Animal.DOG instanceof Enum);
+		System.out.println(Animal.DOG instanceof Object);
 	}
 
 }
