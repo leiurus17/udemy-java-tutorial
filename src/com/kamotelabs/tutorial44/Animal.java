@@ -1,6 +1,20 @@
 package com.kamotelabs.tutorial44;
 
 public enum Animal {
-	CAT, DOG, MOUSE
+	CAT("Fergus"), DOG("Fido"), MOUSE("Jerry");
+	
+	private String name;
+	
+	Animal (String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public String toString() {
+		return "This animal is called: " + name;
+	}
 
 }
