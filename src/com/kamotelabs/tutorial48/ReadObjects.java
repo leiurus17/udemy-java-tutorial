@@ -13,7 +13,7 @@ public class ReadObjects {
 		
 		try(FileInputStream fi = new FileInputStream("test.ser"); ObjectInputStream os = new ObjectInputStream(fi)){
 			
-			Person[] person = (Person[]) os.readObject();
+			Person person = (Person) os.readObject();
 			
 			System.out.println(person);
 			
