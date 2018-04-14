@@ -15,6 +15,7 @@ public class WriteObjects {
 		try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("test.ser"))) {
 			
 			Person person = new Person(7, "Bob");
+			Person.setCount(88);
 			os.writeObject(person);
 			
 		} catch (FileNotFoundException e) {
