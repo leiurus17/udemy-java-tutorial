@@ -10,15 +10,15 @@ public class ReadObjects {
 	public static void main(String[] args) {
 		System.out.println("Reading objects...");
 		
-		try(FileInputStream fi = new FileInputStream("people.bin")){
+		try(FileInputStream fi = new FileInputStream("array.ser")){
 			
 			ObjectInputStream os = new ObjectInputStream(fi);
 			
-			Person person1 = (Person) os.readObject();
-			Person person2 = (Person) os.readObject();
+			Person[] people = (Person[]) os.readObject();
 			
-			System.out.println(person1);
-			System.out.println(person2);
+			for(Person person: people) {
+				System.out.println(person);
+			}
 			
 			os.close();
 			
