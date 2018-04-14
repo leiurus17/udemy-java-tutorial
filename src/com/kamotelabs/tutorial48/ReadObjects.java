@@ -11,7 +11,7 @@ public class ReadObjects {
 	public static void main(String[] args) {
 		System.out.println("Reading objects...");
 		
-		try(FileInputStream fi = new FileInputStream("test.ser"); ObjectInputStream os = new ObjectInputStream(fi)){
+		try(ObjectInputStream os = new ObjectInputStream(new FileInputStream("test.ser"))){
 			
 			Person person = (Person) os.readObject();
 			
