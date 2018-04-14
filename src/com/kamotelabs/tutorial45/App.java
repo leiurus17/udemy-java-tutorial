@@ -11,7 +11,11 @@ public class App {
 	private static void calculate(int value) {
 		System.out.println(value);
 		
-		calculate(value);
+		if(value == 1) {
+			return; // exit the recursion
+		}
+		
+		calculate(value - 1);
 		
 	}
 
