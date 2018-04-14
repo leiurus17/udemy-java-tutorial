@@ -20,6 +20,9 @@ public class WriteObjects {
 			
 			ObjectOutputStream os = new ObjectOutputStream(fs);
 			
+			os.writeObject(mike);
+			os.writeObject(sue);
+			
 			os.close();
 			
 		} catch (FileNotFoundException e) {
