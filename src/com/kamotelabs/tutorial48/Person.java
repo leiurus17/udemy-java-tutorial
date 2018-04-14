@@ -8,7 +8,7 @@ public class Person implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private transient int id;
 	private String name;
 	
 	public Person(int id, String name) {
