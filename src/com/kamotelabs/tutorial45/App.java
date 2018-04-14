@@ -4,18 +4,19 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		calculate(4);
+		// e.g. 4! = 4 * 3 * 2 * 1 (factorial 4)
+		System.out.println(factorial(3));
 		
 	}
 	
-	private static void calculate(int value) {
+	private static int factorial(int value) {
 		System.out.println(value);
 		
 		if(value == 1) {
-			return; // exit the recursion
+			return 1;
 		}
 		
-		calculate(value - 1);
+		return factorial(value - 1) * value;
 		
 	}
 
